@@ -1,75 +1,63 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home — Healthcare Tips</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Tips | Stay Healthy & Fit</title>
+  <meta name="description" content="Healthcare Tips – Trusted blogs about healthy living, stress management, nutrition, and more.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="container">
-  <div class="nav">
-    <div class="brand"><a href="index.html">🏥 <span data-site-name>Healthcare Tips</span></a></div>
-    <button class="menu" onclick="toggleMenu()">☰</button>
-    <div id="navlinks" class="links">
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Healthcare Tips</h1>
+    <nav>
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
       <a href="about.html">About</a>
       <a href="policy.html">Policy</a>
       <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Stay Healthy, Stay Strong</h2>
+    <p>Your trusted source for health, wellness, and fitness tips.</p>
+    <a href="blog.html" class="btn">Read Articles</a>
+  </section>
+
+  <!-- Latest Posts -->
+  <section class="posts">
+    <h2>Latest Posts</h2>
+    <div id="posts-container" class="posts-grid"></div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section class="doctors">
+    <h2>Our Medical Reviewers</h2>
+    <div class="doctors-grid">
+      <div class="doctor"><img src="assets/doctor1.jpg" alt="Doctor 1"><p>Dr. Rajesh Kumar</p></div>
+      <div class="doctor"><img src="assets/doctor2.jpg" alt="Doctor 2"><p>Dr. Amit Sharma</p></div>
+      <div class="doctor"><img src="assets/doctor3.jpg" alt="Doctor 3"><p>Dr. Sunil Verma</p></div>
+      <div class="doctor"><img src="assets/doctor4.jpg" alt="Doctor 4"><p>Dr. Neha Singh</p></div>
     </div>
-  </div>
-</header>
+  </section>
 
-  <main class="container">
-    <section class="hero">
-      <div>
-        <h1><span data-site-name>Healthcare Tips</span></h1>
-        <p data-tagline>Trusted wellness guides, explained simply.</p>
-        <p class="small">Browse our latest posts below or explore the full blog.</p>
-        <a class="btn" href="blog.html">View all posts</a>
-      </div>
-      <div class="card">
-        <h3>Our Doctors</h3>
-        <div class="doctors">
-          <div class="doc"><img src="assets/doctor1.jpg" alt=""><div><strong>Dr. Anjali Sharma</strong><div class="small">Cardiologist</div></div></div>
-          <div class="doc"><img src="assets/doctor2.jpg" alt=""><div><strong>Dr. Rajesh Verma</strong><div class="small">Neurologist</div></div></div>
-          <div class="doc"><img src="assets/doctor3.jpg" alt=""><div><strong>Dr. Priya Kapoor</strong><div class="small">Pediatrician</div></div></div>
-        </div>
-      </div>
-    </section>
+  <!-- Subscribe Form -->
+  <section class="subscribe">
+    <h2>Subscribe for Updates</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
-    <section class="section-title">
-      <h2>Latest Posts</h2>
-      <a class="btn" href="blog.html">All posts →</a>
-    </section>
-    <section id="home-posts" class="grid"></section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Healthcare Tips | All Rights Reserved</p>
+  </footer>
 
-    <section style="margin-top:24px">
-      <h2>Trusted by</h2>
-      <div class="logo-grid">
-        <div class="logo">Health+</div>
-        <div class="logo">CareX</div>
-        <div class="logo">MediPro</div>
-        <div class="logo">FitLife</div>
-        <div class="logo">WellnessHub</div>
-      </div>
-    </section>
-  </main>
-
-<footer class="container footer">
-  <div>
-    © <span data-year></span> <span data-owner>Owner Name</span>. All rights reserved. · Built by <span data-maker>Maker</span>
-  </div>
-  <div id="social-links" class="small" style="margin-top:6px;"></div>
-  <div class="small" style="margin-top:6px;"><span data-address>Address</span> · <a href="mailto:" data-email>Email</a> · <span data-phone>Phone</span></div>
-</footer>
-<script src="assets/app.js"></script>
-
-  <script>
-    loadPosts(6).then(list=> renderPosts(list, 'home-posts'));
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
