@@ -3,59 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healthcare Tips | Stay Healthy & Fit</title>
-  <meta name="description" content="Healthcare Tips – Trusted blogs about healthy living, stress management, nutrition, and more.">
+  <title>Healthcare Tips - Stay Healthy, Stay Strong</title>
+  <meta name="description" content="Healthcare Tips: Trusted health articles, stress management, nutrition guides and more.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <h1 class="logo">Healthcare Tips</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">About</a>
-      <a href="policy.html">Policy</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav-flex">
+      <h1 class="logo">Healthcare Tips</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="policy.html">Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h2>Stay Healthy, Stay Strong</h2>
-    <p>Your trusted source for health, wellness, and fitness tips.</p>
-    <a href="blog.html" class="btn">Read Articles</a>
+    <div class="container hero-content">
+      <h2>Stay Healthy, Stay Strong</h2>
+      <p>Explore expert tips on wellness, nutrition, stress management, and fitness.</p>
+      <a href="blog.html" class="btn">Read Articles</a>
+    </div>
   </section>
 
-  <!-- Latest Posts -->
+  <!-- Posts Section -->
   <section class="posts">
-    <h2>Latest Posts</h2>
-    <div id="posts-container" class="posts-grid"></div>
+    <div class="container">
+      <h2>Latest Articles</h2>
+      <div id="posts-container" class="posts-grid"></div>
+    </div>
   </section>
 
   <!-- Doctors Section -->
   <section class="doctors">
-    <h2>Our Medical Reviewers</h2>
-    <div class="doctors-grid">
-      <div class="doctor"><img src="assets/doctor1.jpg" alt="Doctor 1"><p>Dr. Rajesh Kumar</p></div>
-      <div class="doctor"><img src="assets/doctor2.jpg" alt="Doctor 2"><p>Dr. Amit Sharma</p></div>
-      <div class="doctor"><img src="assets/doctor3.jpg" alt="Doctor 3"><p>Dr. Sunil Verma</p></div>
-      <div class="doctor"><img src="assets/doctor4.jpg" alt="Doctor 4"><p>Dr. Neha Singh</p></div>
+    <div class="container">
+      <h2>Our Medical Experts</h2>
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <img src="assets/doctor1.jpg" alt="Doctor 1">
+          <h3>Dr. Rajesh Kumar</h3>
+          <p>Cardiologist</p>
+        </div>
+        <div class="doctor-card">
+          <img src="assets/doctor2.jpg" alt="Doctor 2">
+          <h3>Dr. Amit Sharma</h3>
+          <p>Nutritionist</p>
+        </div>
+        <div class="doctor-card">
+          <img src="assets/doctor3.jpg" alt="Doctor 3">
+          <h3>Dr. Sunil Verma</h3>
+          <p>Psychologist</p>
+        </div>
+        <div class="doctor-card">
+          <img src="assets/doctor4.jpg" alt="Doctor 4">
+          <h3>Dr. Neha Singh</h3>
+          <p>General Physician</p>
+        </div>
+      </div>
     </div>
-  </section>
-
-  <!-- Subscribe Form -->
-  <section class="subscribe">
-    <h2>Subscribe for Updates</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Healthcare Tips | All Rights Reserved</p>
+    <div class="container">
+      <p>&copy; 2025 Healthcare Tips | All Rights Reserved</p>
+    </div>
   </footer>
 
   <script src="app.js"></script>
